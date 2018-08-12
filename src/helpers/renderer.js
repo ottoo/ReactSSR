@@ -20,7 +20,7 @@ export default (req, store) => {
 
   return `
     <html>
-      <title>Otto Kivikärki</title>
+      <title>ReactSSR</title>
       <head></head>
       <body>
         <div id="app-container">${content}</div>

@@ -4,13 +4,16 @@ const baseConfig = require('./webpack.base.js');
 const webpackNodeExternals = require('webpack-node-externals');
 
 const config = {
+  mode: 'development',
+  context: path.resolve(__dirname, 'src'),
+
   // Inform webpack that we're building a bundle
   // for nodeJS, rather than for the browser
   target: 'node',
 
   // Tell webpack the root file of our
   // server application
-  entry: './src/index.js',
+  entry: './server.js',
 
   // Tell webpack where to put the output file
   // that is generated

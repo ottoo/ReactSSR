@@ -8,7 +8,7 @@ import Routes from './client/Routes';
 
 const app = express();
 
-app.use(express.static('public'));
+app.use(express.static('public', { index: false }));
 
 app.get('*', (req, res) => {
   const store = createStore();
